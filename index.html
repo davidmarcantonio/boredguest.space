@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Bored Guest — the “boring” 99¢ visitor sign-in for iPad</title>
 <meta name="description" content="A lobby iPad for visitor sign-in. The host gets an email, the log lands in your own Google Sheet. Proudly “boring”: 99¢, no subscription, no backend.">
@@ -15,17 +16,14 @@
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="A lobby iPad welcome screen, next to the headline The most boring visitor sign-in you&#x27;ll ever buy.">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="icon" type="image/png" sizes="64x64" href="favicon.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
-<link rel="stylesheet" href="style.css?v=4">
+<link rel="stylesheet" href="style.css?v=5">
 </head>
 <body>
 
 <header class="hero">
-  <div class="wrap" style="display:block">
+  <div class="wrap u-block">
     <div class="top">
       <a class="brand" href="/"><img src="mark.png" alt="" width="30" height="30"> Bored Guest</a>
       <nav class="nav">
@@ -36,13 +34,13 @@
       </nav>
     </div>
   </div>
-  <div class="wrap" style="margin-top: clamp(24px, 5vw, 56px)">
+  <div class="wrap u-mt-fluid">
     <div>
       <div class="stamp" role="img" aria-label="Certified boring"><span class="stamp-top">Certified</span><span class="stamp-main">Boring</span></div>
       <h1>The most “boring” visitor sign-in you'll ever buy.</h1>
       <p class="lede">Bored Guest turns a lobby iPad into a visitor sign-in. Visitors type their name, their host gets an email, and the log lands in your own Google Sheet. Not ours.</p>
       <div class="setup-badge"><span class="lvl" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i></span>Setup: your IT admin, with Google Workspace admin access</div>
-      <div class="price-tag"><b>$0.99</b><span class="per">per iPad</span><span class="fine">No subscription. No account with us. <a href="#fit" style="color:inherit">Is it right for you?</a></span></div>
+      <div class="price-tag"><b>$0.99</b><span class="per">per iPad</span><span class="fine">No subscription. No account with us. <a class="u-inherit" href="#fit">Is it right for you?</a></span></div>
       <div class="cta-row">
         <span class="soon">Coming soon to the App Store</span>
         <a class="cta ghost" href="mailto:boredroom@bacstech.io?subject=Bored%20Guest">Tell me when it's out</a>
@@ -80,7 +78,7 @@
         </ul>
       </div>
     </div>
-    <div class="note" style="margin-top:24px">
+    <div class="note u-mt-24">
       <p><strong>Not sure?</strong> Forward this page to whoever manages your Google account and let them decide. Or <a href="mailto:hello@bacstech.io?subject=Bored%20Guest%20setup%20question">ask us before you buy</a>. We'd rather answer a question than have you stuck with an app you can't finish setting up.</p>
     </div>
   </div>
@@ -90,7 +88,7 @@
   <div class="wrap">
     <h2>Why we're “boring.”</h2>
     <p class="lede">The platforms in this space are built and priced for enterprises with hundreds of locations. Most offices have one front desk and want it done right. “Boring” is how we keep it that way.</p>
-    <div class="grid-3" style="margin-top:32px">
+    <div class="grid-3 u-mt-32">
       <div class="card">
         <h3>No visitor-management machine</h3>
         <p>No “workplace platform,” no dashboard to justify. A sign-in sheet that happens to be an iPad.</p>
@@ -148,7 +146,7 @@
     <div class="pricing">
       <div class="big">99¢<small>per iPad, once</small></div>
       <div>
-        <h2 style="color:#fff">Everything's included. Nothing's “exciting.”</h2>
+        <h2 class="u-white">Everything's included. Nothing's “exciting.”</h2>
         <ul>
           <li>Minimum mode: first and last name, email, phone, host</li>
           <li>Full mode: add a signed NDA, a photo, or both</li>
@@ -156,7 +154,7 @@
           <li>The log lives in your own Google Sheet</li>
           <li>Full MDM support, no “enterprise tier”</li>
         </ul>
-        <p style="margin:18px 0 0">Buying for a lot of locations? Apple Business lets you buy copies in bulk and push them to iPads with no Apple ID on the device. Still 99¢ each.</p>
+        <p class="u-m-18-0-0">Buying for a lot of locations? Apple Business lets you buy copies in bulk and push them to iPads with no Apple ID on the device. Still 99¢ each.</p>
       </div>
     </div>
   </div>
